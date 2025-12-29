@@ -79,7 +79,7 @@ This dashboard provides a concise, one-page overview of coffee sales performance
     * `% card payments`
       
       ```DAX
-      Card Payments = CALCULATE (COUNTROWS (coffee_sales),coffee_sales[cash_type] = "card")
+      Card Payments = CALCULATE (COUNTROWS (coffee_sales),coffee_sales[cash_type] = "card")   
       % Card Payments= DIVIDE ([Card Payments],[Total Transactions])
       ```
 4. Added calculated columns using DAX to support time-based analysis
@@ -91,7 +91,7 @@ This dashboard provides a concise, one-page overview of coffee sales performance
     * `month`
       
         ```DAX
-          month = FORMAT ( coffee_sales[date], "MMM" )
+          month = FORMAT (coffee_sales[date], "MMM" )
         ```
     * `hour`
        
